@@ -1,0 +1,276 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+=
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+<!-- Create survey page, place background and create survey questions for the user -->
+    <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWJRYJzyJ_O09s3rGN6SgyoPcllH5imtpP0YtfC7aqO0rLtvxBPA">
+      <h2>Survey Questions</h2>
+      <hr>
+
+      <h3><strong>Fill out the below to find out your celeb match!</strong></h3>
+      <h4>Name (Required)</h4>
+      <input type="text" id="name-input" class="form-control" required="">
+
+      <h4>Link to Photo Image (Required)</h4>
+      <input type="text" id="photo-input" class="form-control" required="">
+
+      <hr>
+     
+        <h3><strong>Question 1</strong></h3>
+        <h4>You find it easy to adapt to social situations, and enjoy networking</h4>
+        <select class="chosen-select" id="q1">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 2</strong></h3>
+        <h4>You value creativity and are always open to explore artistic pursuits.</h4>
+        <select class="chosen-select" id="q2">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        
+        <h3><strong>Question 3</strong></h3>
+        <h4>You tend to remain calm under pressure.</h4>
+        <select class="chosen-select" id="q3">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+         
+        <h3><strong>Question 4</strong></h3>
+        <h4>You value independence and do not like feeling restricted.</h4>
+        <select class="chosen-select" id="q4">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>Building and maintaining friendships is important to you.</h4>
+        <select class="chosen-select" id="q5">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 6</strong></h3>
+        <h4>You enjoy being challenged and taking on new experiences.</h4>
+        <select class="chosen-select" id="q6">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 7</strong></h3>
+        <h4>Politics is a topic you enjoy discussing and find debate to be an enlightening experience.</h4>
+        <select class="chosen-select" id="q7">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 8</strong></h3>
+        <h4>If you disagree with someone, you try to find the middleground and build compromise.</h4>
+        <select class="chosen-select" id="q8" style="display: none;">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 9</strong></h3>
+        <h4>You value facts over fantasy.</h4>
+        <select class="chosen-select" id="q9">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 10</strong></h3>
+        <h4>You try to find the positive aspect of every situation.</h4>
+        <select class="chosen-select" id="q10">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </section>
+        <br>
+        <br>
+         <!-- Modal -->
+         <div class="modal">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title"></h4>
+                  </div>
+                  <div class="modal-body text-center">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button type="submit" class="btn btn-danger btn-lg btn-block" id="submit">Submit</button>
+      <br>
+      <a href="/">
+          <button type="button" class="btn btn-primary">
+              Return Home
+          </button>
+      </a>
+      <hr>
+      <footer class="footer">
+          <p>
+              <a href="/api/friends">API Friends List</a> | <a href="https://github.com/kepinani1/friendfinder">GitHub Repo</a>
+          </p>
+      </footer>
+  </div>
+
+  <script type="text/javascript">
+
+    $(".submit").on("click", function (event) {
+      event.preventDefault();
+      // Grabbing the form elements. 
+
+//setting the modal
+      var matchDisplay = $('.modal-title');
+      var modalDisplay = $('.modal-body');
+//grabbing the html user inputs from the survey
+      var name = $('#name-input').val().trim();
+      var photo = $('#photo-input').val();
+      var question1 = parseInt($('#q1').val());
+      var question2 = parseInt($('#q2').val());
+      var question3 = parseInt($('#q3').val());
+      var question4 = parseInt($('#q4').val());
+      var question5 = parseInt($('#q5').val());
+      var question6 = parseInt($('#q6').val());
+      var question7 = parseInt($('#q7').val());
+      var question8 = parseInt($('#q8').val());
+      var question9 = parseInt($('#q9').val());
+      var question10 = parseInt($('#q10').val());
+      // Setting inital user's inputs to server
+      var userInputs = {
+        name: name,
+        photo: photo,
+      };
+//places user's question inputs into a variable (as userScores)
+      var userScores={
+      scores: [
+          question1,
+          question2,
+          question3,
+          question4,
+          question5,
+          question6,
+          question7,
+          question8,
+          question9,
+          question10
+        ]
+    };
+      console.log(userInputs);
+      console.log(userScores);
+//Looks at difference between user's scores and the friends' array scores (result is the absolute value difference). If you notice in the apiRoutes page, I added another function for finding the difference. I wasn't sure if this function or the other would work so I created two different functions.
+      function arrayDifference(userScores, friends) {
+        var array = [], diff = [];
+        for (var i = 0; i < userScores.length; i++) {
+          array[userScores[i]] = true;
+        }
+      }
+      for (var i = 0; i < friends.length; i++) {
+        if (array[friends[i]]) {
+          delete array[friends[i]];
+        } else {
+          array[friends[i]] = true;
+        }
+      }
+      for (var result in array) {
+        diff.push(result);
+    }
+
+    return diff;
+//if the user inputted a name, link, and answered all questions (and differences between user's inputs and friends array was found), the data will be posted
+      if (
+
+        (name !== '') && (photo !== '') && (result !== '')
+      ) {
+        // Grab the URL of the website
+        var currentURL = window.location.origin;
+        // AJAX post the data to the friends API. 
+        $.post(currentURL + "/api/friends", userInputs, result, function (data) {
+          // If the data has a match, then show this
+          if (data.name !== undefined) {
+            matchDisplay.html('Congratulations. Your match is...');
+            modalBody.html('<p>...is ' + data.name + '!</p><img src="' + data.photo + '" height="250">');
+          } else {
+            // If no match, show the below messages
+            matchDisplay.html('Sorry');
+            modalDisplay.html('<p> We found no match. Do you want to try again?</p>');
+          }
+       
+          $('.modal').modal('toggle');
+        });
+      } else {
+        // If the form was not valid, this error is shown
+        matchStatus.html('Error...');
+        modalDisplay.html('Please answer all questions on the form.');
+        // Toggle modal
+        $('.modal').modal('toggle');
+      }
+    });
+    $('.friend').reset();
+
+  </script>
+
+  </body>
+
+</html>
